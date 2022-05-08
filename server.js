@@ -1,7 +1,10 @@
 const express = require('express')
-const astronomy = require('./astronomy')
+const astronomy = require('./astronomy.json')
 const app = express()
 
+app.get("/",(req, res) =>{
+    res.send("Hello")
+})
 
 app.get('/astronomy', (req, res) => {
     const page = parseInt(req.query.page)
