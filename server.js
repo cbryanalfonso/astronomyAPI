@@ -30,4 +30,4 @@ app.get('/astronomy', (req, res) => {
     res.json(results)
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
