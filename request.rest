@@ -1,3 +1,3 @@
-GET http://localhost:3000/astronomy
+GET http://localhost:3000/astronomy?page=1&limit=2
 
-//?page=1&limit=20
+//
