@@ -1,9 +1,11 @@
-const express = require('express')
-const astronomy = require('./astronomy.json')
-const app = express()
+const express = require('express');
+const astronomy = require('./astronomy.json');
+const app = express();
+
+let port = process.env.PORT || 3000;
 
 app.get("/",(req, res) =>{
-    res.send("Hello")
+    res.send("Hello www")
 })
 
 app.get('/astronomy', (req, res) => {
@@ -33,4 +35,6 @@ app.get('/astronomy', (req, res) => {
     res.send(results)
 })
 
-app.listen(process.env.PORT || 3000)
+app.listen(port, () =>{
+    console.log('escuchando ',port);
+})
