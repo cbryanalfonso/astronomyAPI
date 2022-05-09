@@ -32,7 +32,7 @@ app.get('/astronomy', (req, res) => {
     }
     
     results.results = astronomy.slice(startIndex, endIndex)
-    res.send(results)
+    res.json(results)
 })
 
 app.listen(port, () =>{
