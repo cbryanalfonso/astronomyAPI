@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 app.get('/astronomy', (req, res) => {
     const page = parseInt(req.query.page ? req.query.page : "1")
-    const limit = parseInt("10")
+    const limit = parseInt("9")
 
     const startIndex = (page - 1) * limit
     const endIndex = page * limit
